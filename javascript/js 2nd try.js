@@ -40,30 +40,28 @@ function currentSlide(n) {
   SlideShow(slidePosition = n);
 }
 
-// Get the href attribute of the link
+//-------------------------------|
+// links to fish in the carousel |
+//-------------------------------|
 var href = window.location.href;
-
-
 var parts = href.split('#');
 
-//Check if the URL contains a fragment identifier
+
 if (parts.length > 1) {
-    var fragment = parts[1];
+  var fragment = parts[1];
+  var slideNumber = parseInt(fragment);
 
-    var slideNumber = parseInt(fragment);
 
-
-    if (!isNaN(slideNumber)) {
-
-        console.log(slideNumber);
-    } else {
-        console.log("Invalid slide number.");
-    }
+  if (!isNaN(slideNumber)) {
+    slidePosition = slideNumber; 
+    SlideShow(slidePosition); 
+  } else {
+    console.log("Invalid slide number.");
+  }
 } else {
-    console.log("No fragment identifier found in the URL.");
-
-  
+  console.log("No fragment identifier found in the URL.");
 }
+
 
 
 //------------------------------------------------|
