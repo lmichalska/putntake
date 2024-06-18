@@ -867,3 +867,13 @@ h3 {
     padding: 16px 31px;
     margin: 40px;
   }
+
+
+  @media only screen and (min-width: 768px) {
+    .about-us{
+        max-width: 90vw;
+    }
+    .review-card-container{
+        max-width: 30vw;
+    }
+  }
