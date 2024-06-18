@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kid's Lake - Fish</title>
+    <link rel="stylesheet" href="styles/css 2nd try.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="navbar">
+      <div class="navbar-logo logo">
+          <img src="images/putandtake-logo-hd.webp" alt="Nørreris Put and Take logo">
+          <span class="logo-text">Nørreris<br>Put<span class="orange">&</span>Take</span>
+      </div>
+      <div class="hamburger-menu" id="hamburger-menu">
+          <div class="bar"></div>
+      </div>
+</nav>
+
+
+<main>
+<h5><a href="index.html">Hjem</a> > <a href="lakecarousel.html">Vores søer</a> > <a href="fishlist.html" >Vores fisk (liste)</a> > <a href="fish kids lake.html">Børnesø - Fisk</a></h5>
+<h1>Børnesø - Fisk</h1>
+    <div>
+<div class="slideshow-container fade">
+
+  <div class="Containers">
+    <div class="fish-container">
+        <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+    <img id="fishimg" src="images/rainbow_trout.webp" alt="rainbow_trout">
+    <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+</div>
+    <div style="text-align:center">
+      <span class="dots2" onclick="currentSlide(1)"></span>
+      <span class="dots2" onclick="currentSlide(2)"></span>
+    </div> 
+    <h1 class="orange" id="italic">Regnbueørred</h1>
+    <p>Regnbueørreden er opkaldt efter den røde stribe, der løber langs dens side. Den har en slank krop med en skinnende sølvfarve, der bliver til en lys pink stribe ned ad siden. Ryggen er en mørkere olivengrøn med små sorte pletter, der fortsætter over rygfinnen og halen.</p>
+    <br><p>Max. vægt: 12 kg<br>
+      Max. længde: 80 cm</p>
+    <h3>Hvordan fanger man den?</h3>
+    <p>Start med at bruge let til medium fiskegrej for at kunne mærke ørredens lette bid. Agn som orme, majs eller små dejagn er meget effektive, især når de fiskes tæt på bunden eller flyder under en prop. Til spinnefiskeri kan små spinnere eller blink, der efterligner små fisk, tiltrække ørreder.</p>
+    <br><p>Regnbueørreden lever primært af amfipoder, snegle, igler, fluer, græshopper, biller, små krebsdyr og insektlarver. Store regnbueørreder spiser også små fisk.</p>
+    <br><article id="gallery">
+      <img src="" alt="pic1">
+      <img src="" alt="pic2">
+      <img src="" alt="pic3">
+      <img src="" alt="pic4">
+      <img src="" alt="pic5">
+    </article>
+    <div id="buttonsgroup">
+        <a href="fishlist.html"><button class="button">Se alle fisk</button></a>
+    </div>
+  </div>
+  <div class="Containers">
+    <div class="fish-container">
+      <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+    <img id="fishimg" src="images/golden_danish_trout.webp" alt="danish_golden_trout">
+    <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+    <div style="text-align:center">
+      <span class="dots" onclick="currentSlide(1)"></span>
+      <span class="dots" onclick="currentSlide(2)"></span>
+      <span class="dots" onclick="currentSlide(3)"></span>
+      <span class="dots" onclick="currentSlide(4)"></span>
+      <span class="dots" onclick="currentSlide(5)"></span>
+      <span class="dots" onclick="currentSlide(6)"></span>
+      <span class="dots" onclick="currentSlide(7)"></span>
+    </div> 
+    <h1 class="orange" id="italic">Guldørred</h1>
+      <p>Danske guldørreder har en vibrant gylden og dyb orange farve, prydet med spredte sorte pletter over hele kroppen. De kendetegnes ved en markant rød til orange stribe, der løber langs deres sider.</p>
+      <br><p>Max. vægt: 4 kg<br>
+        Max. længde: 30 cm</p>
+      <h3>Hvordan fanger man den?</h3>
+      <p>Brug let fiskegrej, herunder lette spinnestænger eller fluestænger med små hjul og liner, og eksperimenter med agn eller lokkemidler, der efterligner deres naturlige bytte som små spinnere, fluer eller orme. Præsenter dit agn naturligt og undgå at skræmme fisken. Vær opmærksom på de ideelle fisketider, typisk tidligt om morgenen eller sent om eftermiddagen, når insektaktiviteten er høj. Vær tålmodig, observant og praktiser ansvarlig fangst og genudsætning for at bevare disse bestande.</p>
+      <br><p>Kosten for danske guldørreder består primært af en række akvatiske insekter, krebsdyr og små fisk, som findes i deres ferskvandshabitater.</p>
+      <br>
+    <article id="gallery">
+      <img src="" alt="pic1">
+      <img src="" alt="pic2">
+      <img src="" alt="pic3">
+      <img src="" alt="pic4">
+      <img src="" alt="pic5">
+    </article>
+  </div>
+
+<br>
+
+<!-----------------------------------------
+Slide-in nav-menu
+------------------------------------------->
+<div class="overlay" id="overlay"></div>
+<nav class="mobile-nav" id="mobile-nav">
+    <!-- closing button -->
+    <button id="close-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M31.3742 29.1258C31.6739 29.4231 31.8425 29.8278 31.8425 30.25C31.8425 30.6722 31.6739 31.0769 31.3742 31.3742C31.0769 31.6739 30.6722 31.8425 30.25 31.8425C29.8278 31.8425 29.4231 31.6739 29.1258 31.3742L16 18.2325L2.87415 31.3742C2.57685 31.6739 2.17216 31.8425 1.74998 31.8425C1.32781 31.8425 0.923115 31.6739 0.625818 31.3742C0.326073 31.0769 0.157471 30.6722 0.157471 30.25C0.157471 29.8278 0.326073 29.4231 0.625818 29.1258L13.7675 16L0.625818 2.87417C0.224192 2.47254 0.0673392 1.88716 0.214344 1.33853C0.36135 0.789899 0.78988 0.361369 1.33851 0.214364C1.88714 0.0673586 2.47253 0.224211 2.87415 0.625838L16 13.7675L29.1258 0.625838C29.7467 0.00497741 30.7533 0.00497741 31.3742 0.625838C31.995 1.2467 31.995 2.25331 31.3742 2.87417L18.2325 16L31.3742 29.1258Z" fill="#231F20"/>
+        </svg>
+    </button>
+    <!-- nav links -->
+    <ul>
+        <li><a class="bold" href="index.html">Hjem</a></li>
+        <!-- the 'discover' dropdown menu -->
+        <li class="menu-dropdown">
+            <a href="#" id="dropdown-btn">Opdag <span id="dropdown-arrow">&#9662;</span></a>
+            <ul class="dropdown-content">
+                <li><a href="lakecarousel.html">Vores Søer</a></li>
+                <li><a href="fishlist.html">Vores Fisk</a></li>
+                <li><a href="facilities.html">Vores Faciliteter</a></li>
+                <li><a href="accomodation.html">Overnatning</a></li>
+            </ul>
+        </li>
+        <li><a href="prices-rules.html">Priser og regler</a></li>
+        <li><a href="fishrestock.html">Fiskeudsætning</a></li>
+        <li><a href="404.html">Galleri</a></li>
+        <li><a href="404.html">FAQ</a></li>
+        <li><a href="contact.html">Kontakt</a></li>
+    </ul>
+<!-- Language options -->
+<div class="language-selector show">
+    <a href="index.html">    
+        <div class="language-item ">
+            <span class="language-code bold">DK</span>
+            <img src="images/dk-flag.png" alt="Danish Flag" class="flag">
+        </div>
+    </a>
+    <a href="index-en.html">
+        <div class="language-item">
+            <span class="language-code">EN</span>
+            <img src="images/en-flag.png" alt="English Flag" class="flag">
+        </div>
+    </a>
+    <div class="language-item">
+        <span class="language-code">DE</span>
+        <img src="images/ger-flag.png" alt="German Flag" class="flag">
+    </div>
+</div>
+<div class="small-logo logo">
+    <img src="images/putandtake-logo-hd.webp" alt="Nørreris Put and Take logo" class="logo-img">
+    <span class="logo-text">Nørreris<br>Put<span class="orange">&</span>Take</span>
+</div>
+    <!-- blue triangle style at bottom-->
+    <svg class="sidebar-triangle" xmlns="http://www.w3.org/2000/svg" width="283" height="326" viewBox="0 0 283 326" fill="none">
+        <path d="M283 0.319092L-48.9976 326H283V0.319092Z" fill="#D4E6FF"/>
+    </svg>
+</nav>
+
+</main>
+<!----------------------------------------------------
+    footer                                          ||
+----------------------------------------------------->
+<footer>
+    <div class="navbar-logo logo">
+        <img src="images/putandtake-logo-hd.webp" alt="Nørreris Put and Take logo" style="width: 20vw;">
+        <span class="logo-text" style="font-size: 49.69px;">Nørreris<br>Put<span class="orange">&</span>Take</span>
+    </div>
+    <div style="display: flex; justify-content: space-between; margin-top: 2vh;">
+    <div><h3>Kontakt</h3>
+        <div style="display:flex; flex-direction: column; gap: 1vh;">
+    <article style="display: flex; flex-direction: row;"><img src="images/user.webp" alt="user icon from freepic" style="height: 16px; margin-right: 1vw;"><p style="margin-top: 0; margin-bottom: 0%;">Niels Kieldsen</p></article>
+    <article style="display: flex; flex-direction: row;"><img src="images/phone-call.png" alt="phone icon from freepic" style="height: 16px; margin-right: 1vw;"><p style="margin-top: 0; margin-bottom: 0%;">+45 40 40 84 89 </p></article>
+    <article style="display: flex; flex-direction: row;"><img src="images/email.webp" alt="email icon from freepic" style="height: 16px; margin-right: 1vw;"><p style="margin-top: 0; margin-bottom: 0%;">kieldsen@mail.dk</p></article></div></div>
+    <div><h3>Åbningstider</h3>
+    <p style="text-align: right;">Mandag - Søndag:<br>
+        05:00 - 22:30</p></div></div>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin: 4vh 0 4vh 0;"><article style="display: flex; flex-direction: row;"><img src="images/maps-and-flags.webp" alt="location icon from freepic" style="height: 16px; margin-right: 1vw;"><p style="margin-top: 0;">Nørrerisvej 9,<br>
+            8832 Skals</p></article>
+            <div style="display: flex;">
+                <a href="index.html">    
+                    <div class="language-item ">
+                        <span class="language-code bold" style="font-size: 14px">DK</span>
+                        <img src="images/dk-flag.png" alt="Danish Flag" class="flag2">
+                    </div>
+                </a>
+                <a href="index-en.html">
+                    <div class="language-item">
+                        <span class="language-code" style="font-size: 14px">EN</span>
+                        <img src="images/en-flag.png" alt="English Flag" class="flag2">
+                    </div>
+                </a>
+                <div class="language-item">
+                    <span class="language-code" style="font-size: 14px">DE</span>
+                    <img src="images/ger-flag.png" alt="German Flag" class="flag2">
+                </div>
+            </div></div>
+        <section class="landing-newsletter2">
+            <h3 style="margin-bottom: 1vh;">Abonner på vores nyhedsbrev</h3>
+            <p style="text-align: center; margin-bottom: 2vh;">Få besked hver gang, vi sætter nye fisk ud.</p>
+            <input type="email" placeholder="Indtast din e-mail her" class="email-input">
+            <button class="submit-button2">Indsend</button>
+        </section>
+        <p style="text-align: center;">Følg os på <a href="#">Facebook</a></p>
+</footer>
+<script src="javascript/js 2nd try.js"></script>
+<script src="javascript/script.js"></script>
+</body>
+</html>

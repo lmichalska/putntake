@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prices and rules at Nørreris Put&Take</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://kit.fontawesome.com/b9b3717f4c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-----------------------------------------
+    Sticky navbar at the top
+------------------------------------------->
+<nav class="navbar">
+    <div class="navbar-logo logo">
+        <img src="images/putandtake-logo-hd.webp" alt="Nørreris Put and Take logo">
+        <span class="logo-text">Nørreris<br>Put<span class="orange">&</span>Take</span>
+    </div>
+    <div class="hamburger-menu" id="hamburger-menu">
+        <div class="bar"></div>
+    </div>
+</nav>
+
+<!-----------------------------------------
+Slide-in nav-menu
+------------------------------------------->
+<div class="overlay" id="overlay"></div>
+<nav class="mobile-nav" id="mobile-nav">
+<!-- closing button -->
+<button id="close-btn">
+    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+        <path d="M31.3742 29.1258C31.6739 29.4231 31.8425 29.8278 31.8425 30.25C31.8425 30.6722 31.6739 31.0769 31.3742 31.3742C31.0769 31.6739 30.6722 31.8425 30.25 31.8425C29.8278 31.8425 29.4231 31.6739 29.1258 31.3742L16 18.2325L2.87415 31.3742C2.57685 31.6739 2.17216 31.8425 1.74998 31.8425C1.32781 31.8425 0.923115 31.6739 0.625818 31.3742C0.326073 31.0769 0.157471 30.6722 0.157471 30.25C0.157471 29.8278 0.326073 29.4231 0.625818 29.1258L13.7675 16L0.625818 2.87417C0.224192 2.47254 0.0673392 1.88716 0.214344 1.33853C0.36135 0.789899 0.78988 0.361369 1.33851 0.214364C1.88714 0.0673586 2.47253 0.224211 2.87415 0.625838L16 13.7675L29.1258 0.625838C29.7467 0.00497741 30.7533 0.00497741 31.3742 0.625838C31.995 1.2467 31.995 2.25331 31.3742 2.87417L18.2325 16L31.3742 29.1258Z" fill="#231F20"/>
+    </svg>
+</button>
+<!-- nav links -->
+<ul>
+    <li><a href="index-en.html">Home</a></li>
+    <!-- the 'discover' dropdown menu -->
+    <li class="menu-dropdown">
+        <a id="dropdown-btn">Discover <span id="dropdown-arrow">&#9662;</span></a>
+        <ul class="dropdown-content">
+            <li><a href="lakecarousel.html">Our Lakes</a></li>
+            <li><a href="fishlist.html">Our Fish</a></li>
+            <li><a href="facilities.html">Our Facilities</a></li>
+            <li><a href="'accomodation.html">Accommodation</a></li>
+        </ul>
+    </li>
+    <li><a class="bold" href="#">Prices and Rules</a></li>
+    <li><a href="fishrestock.html">Fish Restock</a></li>
+    <li><a href="404.html">Gallery</a></li>
+    <li><a href="404.html">Common Questions</a></li>
+    <li><a href="contact.html">Contact</a></li>
+</ul>
+
+<div class="language-selector show">
+<a href="index.html">    
+    <div class="language-item ">
+        <span class="language-code">DK</span>
+        <img src="images/dk-flag.png" alt="Danish Flag" class="flag">
+    </div>
+</a>
+<a href="index-en.html">
+    <div class="language-item">
+        <span class="language-code bold">EN</span>
+        <img src="images/en-flag.png" alt="English Flag" class="flag">
+    </div>
+</a>
+<div class="language-item">
+    <span class="language-code">DE</span>
+    <img src="images/ger-flag.png" alt="German Flag" class="flag">
+</div>
+</div>
+<div class="small-logo logo">
+<img src="images/putandtake-logo-hd.webp" alt="Nørreris Put and Take logo" class="logo-img">
+<span class="logo-text">Nørreris<br>Put<span class="orange">&</span>Take</span>
+</div>
+<!-- blue triangle style at bottom-->
+<svg class="sidebar-triangle" xmlns="http://www.w3.org/2000/svg" width="283" height="326" viewBox="0 0 283 326" fill="none">
+    <path d="M283 0.319092L-48.9976 326H283V0.319092Z" fill="#D4E6FF"/>
+</svg>
+</nav>
+
+<!-----------------------------------------
+    Prices section
+------------------------------------------->
+    <main>
+        <div class="title-and-currency">
+            <h1>Prices</h1>
+            <div class="currency-toggle-container">
+                <button class="currency-toggle-button" id="currencyToggleButton">Switch to €</button>
+            </div>
+        </div>
+        <div class="pricing-container">
+            <div class="tabs">
+                <button class="tab active" onclick="showPrices('one-rod')">1 rod</button>
+                <button class="tab" onclick="showPrices('two-rods')">2 rods</button>
+                <button class="tab" onclick="showPrices('kids')">Kids u/12</button>
+            </div>
+            <div id="one-rod" class="pricing-table">
+                <table>
+                    <tr><th>Duration</th><th>Price</th></tr>
+                    <tr><td>2 hours</td><td class="price" data-dkk="120" data-eur="16">DKK 120</td></tr>
+                    <tr><td>3 hours</td><td class="price" data-dkk="140" data-eur="19">DKK 140</td></tr>
+                    <tr><td>4 hours</td><td class="price" data-dkk="160" data-eur="22">DKK 160</td></tr>
+                    <tr><td>5 hours</td><td class="price" data-dkk="180" data-eur="24">DKK 180</td></tr>
+                    <tr><td>6 hours</td><td class="price" data-dkk="200" data-eur="27">DKK 200</td></tr>
+                    <tr><td>1 extra hour</td><td class="price" data-dkk="30" data-eur="4">DKK 30</td></tr>
+                    <tr><td>Dayticket</td><td class="price" data-dkk="260" data-eur="35">DKK 260</td></tr>
+                </table>
+            </div>
+            <div id="two-rods" class="pricing-table hidden">
+                <table>
+                    <tr><th>Duration</th><th>Price</th></tr>
+                    <tr><td>2 hours</td><td class="price" data-dkk="180" data-eur="24">DKK 180</td></tr>
+                    <tr><td>3 hours</td><td class="price" data-dkk="210" data-eur="28">DKK 210</td></tr>
+                    <tr><td>4 hours</td><td class="price" data-dkk="240" data-eur="32">DKK 240</td></tr>
+                    <tr><td>5 hours</td><td class="price" data-dkk="270" data-eur="36">DKK 270</td></tr>
+                    <tr><td>6 hours</td><td class="price" data-dkk="300" data-eur="40">DKK 300</td></tr>
+                    <tr><td>1 extra hour</td><td class="price" data-dkk="45" data-eur="6">DKK 45</td></tr>
+                    <tr><td>Dayticket</td><td class="price" data-dkk="390" data-eur="52">DKK 390</td></tr>
+                </table>
+            </div>
+            <div id="kids" class="pricing-table hidden">
+                <table>
+                    <tr><th>Duration</th><th>Price</th></tr>
+                    <tr><td>2 hours</td><td class="price" data-dkk="60" data-eur="8">DKK 60</td></tr>
+                    <tr><td>3 hours</td><td class="price" data-dkk="70" data-eur="9">DKK 70</td></tr>
+                    <tr><td>4 hours</td><td class="price" data-dkk="80" data-eur="11">DKK 80</td></tr>
+                    <tr><td>5 hours</td><td class="price" data-dkk="90" data-eur="12">DKK 90</td></tr>
+                    <tr><td>6 hours</td><td class="price" data-dkk="100" data-eur="13">DKK 100</td></tr>
+                    <tr><td>1 extra hour</td><td class="price" data-dkk="15" data-eur="2">DKK 15</td></tr>
+                    <tr><td>Dayticket</td><td class="price" data-dkk="130" data-eur="17">DKK 130</td></tr>
+                </table>
+            </div>
+        </div>
+        <div class="note">
+            <p>Need a fishing rod? No problem! To rent a fishing rod, <a href="tel:004540408489">call us</a>.</p>
+        </div>
+    </main>
+
+    <div class="dropdown-container">
+        <button class="pricing-dropdown-button">How to pay? <span class="arrow">▼</span></button>
+        <div id="payDropdown" class="dropdown-content-prices">
+            <p>
+                Payment must be made before the start of fishing. In the event of missing or incomplete payment, it costs a fee of DKK 250 plus payment of the missing amount.
+                Everyone can fish in the small lake. Max 2 fish per hour. <br>
+                There is a discount for groups of min. 10 people. <br>
+                In the cabin, there is a self-service fishing license: <br>
+                The front page is filled out. <br>
+                The original (the white one) is put together with the money in a bag, and the bag is put in the red mailbox. br 
+                The yellow copy is kept during fishing and presented on request.
+                <br><br>
+                MobilePay can be used. No. 51630
+                <br><br>
+                The money box is emptied daily.
+            </p>
+        </div>
+    </div>
+    <div class="dropdown-container">
+        <button class="pricing-dropdown-button">Looking for a gift card? <span class="arrow">▼</span></button>
+        <div id="giftCardDropdown" class="dropdown-content-prices">
+            <p>
+                We tailor gift cards according to your preferences. <br>
+                Select the number of tickets and hours desired. <br>
+                10% discount on purchases over DKK 1,000. For avid anglers, exclusive discounts are available. <br>
+                Reach out to us for inquiries and further details at 4040 8489.
+            </p>
+        </div>
+    </div>
+
+<!-----------------------------------------
+    Pricing calculator!
+------------------------------------------->
+    <button id="calculatorButton" class="primary-button">Calculate my price</button>
+    <section class="calculator-content">
+        <div class="header">
+            <h1>Fishing Pricing Calculator</h1>
+        </div>
+        <div class="container">
+            <div class="option-group">
+            <label for="rods">Number of Rods</label>
+            <input type="number" id="rods" min="1" value="1">
+            </div>
+        
+            <div class="option-group">
+            <label for="duration">Select Duration</label>
+            <select id="duration">
+                <option value="2">2 Hours</option>
+                <option value="3">3 Hours</option>
+                <option value="4">4 Hours</option>
+                <option value="5">5 Hours</option>
+                <option value="6">6 Hours</option>
+                <option value="day">Day Ticket</option>
+            </select>
+            </div>
+        
+            <div class="option-group">
+            <label for="children">Number of Children (under 12)</label>
+            <input type="number" id="children" min="0" value="0">
+            </div>
+        
+            <div class="hide">
+                <div class="option-group">
+                <label for="extra-hour">Extra Hour</label>
+                <input type="checkbox" id="extra-hour">
+                </div>
+            
+                <div class="option-group">
+                <label for="fishing-rod">Fishing Rod Rental</label>
+                <input type="checkbox" id="fishing-rod">
+                </div>
+            </div>
+        
+            <div class="summary">
+            <p>Total Price: <span id="total-price">0 DKK</span></p>
+            </div>
+        
+            <button class="confirm-button">Confirm</button>
+        </div>
+    </section>
+
+
+<!-----------------------------------------
+    Rules!
+------------------------------------------->
+    <section class="rules">
+        <h2>Rules</h2>
+        <ol>
+            <li>Payment must be made before the start of fishing</li>
+            <li>After catching a fish of a certain weight for the first time, you can buy bronze, silver and gold pins for DKK25. </li>
+            <li>Bronze pin: Rainbow Trout over 5 kg, Golden Danish Trout over 2.5 kg, Brook Trout, Brown Trout or crosses over 1.5 kg.</li>
+            <li>Silver pin: Rainbow Trout over 6 kg, Golden Danish Trout or Brook Trout over 3 kg, Brown Trout or crosses over 2 kg.</li>
+            <li>Gold pin: Rainbow Trout over 7 kg, Golden Danish Trout or Brook Trout over 3.5 kg, Brown Trout or crosses over 2.5 kg.</li>
+            <li>Pre-feeding and fishing with live bait is strictly prohibited. Earthworms, flies, small spinners, flashes, corn, and power bait are allowed.</li>
+            <li>Extra fishing rods must face clearly away from the water.</li>
+            <li>Fish may NOT be caught with nets.</li>
+            <li>Fish are cleaned at the cleaning site and waste is placed in a waste container.</li>
+            <li>Note Change: Catch limitation in the small lake - max. two fish per rod.</li>
+            <li>Dogs are led on a leash.</li>
+            <li>Be considerate of other fishermen.</li>
+            <li>Clean up after yourself.</li>
+            <li>The car is welcome to be taken around the lakes. When it is wet, you must park in the car park.</li>
+        </ol>
+    </section>
+
+<!----------------------------------------------------
+    footer in english                              
+----------------------------------------------------->
+<footer>
+    <div class="navbar-logo logo">
+        <img src="images/putandtake-logo-hd.webp" alt="Nørreris Put and Take logo" style="width: 20vw;">
+        <span class="logo-text" style="font-size: 49.69px;">Nørreris<br>Put<span class="orange">&</span>Take</span>
+    </div>
+    <div style="display: flex; justify-content: space-between; margin-top: 2vh;">
+    <div><h3>Kontakt</h3>
+        <div style="display:flex; flex-direction: column; gap: 1vh;">
+    <article style="display: flex; flex-direction: row;"><img src="images/user.webp" alt="user icon from freepic" style="height: 16px; margin-right: 1vw;"><p style="margin-top: 0; margin-bottom: 0%;">Niels Kieldsen</p></article>
+    <article style="display: flex; flex-direction: row;"><img src="images/phone-call.png" alt="phone icon from freepic" style="height: 16px; margin-right: 1vw;"><p style="margin-top: 0; margin-bottom: 0%;">+45 40 40 84 89 </p></article>
+    <article style="display: flex; flex-direction: row;"><img src="images/email.webp" alt="email icon from freepic" style="height: 16px; margin-right: 1vw;"><p style="margin-top: 0; margin-bottom: 0%;">kieldsen@mail.dk</p></article></div></div>
+    <div><h3>Opening hours</h3>
+    <p style="text-align: right;">Monday - Sunday:<br>
+        05:00 - 22:30</p></div></div>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin: 4vh 0 4vh 0;"><article style="display: flex; flex-direction: row;"><img src="images/maps-and-flags.webp" alt="location icon from freepic" style="height: 16px; margin-right: 1vw;"><p style="margin-top: 0;">Nørrerisvej 9,<br>
+            8832 Skals</p></article>
+            <div style="display: flex;">
+                <a href="index.html">    
+                    <div class="language-item ">
+                        <span class="language-code bold" style="font-size: 14px">DK</span>
+                        <img src="images/dk-flag.png" alt="Danish Flag" class="flag2">
+                    </div>
+                </a>
+                <a href="index-en.html">
+                    <div class="language-item">
+                        <span class="language-code" style="font-size: 14px">EN</span>
+                        <img src="images/en-flag.png" alt="English Flag" class="flag2">
+                    </div>
+                </a>
+                <div class="language-item">
+                    <span class="language-code" style="font-size: 14px">DE</span>
+                    <img src="images/ger-flag.png" alt="German Flag" class="flag2">
+                </div>
+            </div></div>
+        <section class="landing-newsletter2">
+            <h3 style="margin-bottom: 1vh;">Subscribe to our newsletter</h3>
+            <p style="text-align: center; margin-bottom: 2vh;">Get notified every time we restock on new fish.</p>
+            <input type="email" placeholder="Indtast din e-mail her" class="email-input">
+            <button class="submit-button2">Submit</button>
+        </section>
+        <p style="text-align: center;">follow us on <a href="#">Facebook</a></p>
+</footer>
+
+<script src="javascript/script.js"></script>
+</body>
+</html>

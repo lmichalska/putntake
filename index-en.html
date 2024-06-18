@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Nørreris Put&Take">
+    <title>Welcome to Nørreris Put&Take</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="https://kit.fontawesome.com/b9b3717f4c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-----------------------------------------
+    Sticky navbar at the top
+------------------------------------------->
+    <nav class="navbar">
+            <div class="navbar-logo logo">
+                <img src="images/putandtake-logo-hd.webp" alt="Nørreris Put and Take logo">
+                <span class="logo-text">Nørreris<br>Put<span class="orange">&</span>Take</span>
+            </div>
+            <div class="hamburger-menu" id="hamburger-menu">
+                <div class="bar"></div>
+            </div>
+    </nav>
+
+<!-----------------------------------------
+    Slide-in nav-menu
+------------------------------------------->
+    <div class="overlay" id="overlay"></div>
+    <nav class="mobile-nav" id="mobile-nav">
+        <!-- closing button -->
+        <button id="close-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M31.3742 29.1258C31.6739 29.4231 31.8425 29.8278 31.8425 30.25C31.8425 30.6722 31.6739 31.0769 31.3742 31.3742C31.0769 31.6739 30.6722 31.8425 30.25 31.8425C29.8278 31.8425 29.4231 31.6739 29.1258 31.3742L16 18.2325L2.87415 31.3742C2.57685 31.6739 2.17216 31.8425 1.74998 31.8425C1.32781 31.8425 0.923115 31.6739 0.625818 31.3742C0.326073 31.0769 0.157471 30.6722 0.157471 30.25C0.157471 29.8278 0.326073 29.4231 0.625818 29.1258L13.7675 16L0.625818 2.87417C0.224192 2.47254 0.0673392 1.88716 0.214344 1.33853C0.36135 0.789899 0.78988 0.361369 1.33851 0.214364C1.88714 0.0673586 2.47253 0.224211 2.87415 0.625838L16 13.7675L29.1258 0.625838C29.7467 0.00497741 30.7533 0.00497741 31.3742 0.625838C31.995 1.2467 31.995 2.25331 31.3742 2.87417L18.2325 16L31.3742 29.1258Z" fill="#231F20"/>
+            </svg>
+        </button>
+        <!-- nav links -->
+        <ul>
+            <li><a class="bold" href="index-en.html">Home</a></li>
+            <!-- the 'discover' dropdown menu -->
+            <li class="menu-dropdown">
+                <a id="dropdown-btn">Discover <span id="dropdown-arrow">&#9662;</span></a>
+                <ul class="dropdown-content">
+                    <li><a href="lakecarousel.html">Our Lakes</a></li>
+                    <li><a href="fishlist.html">Our Fish</a></li>
+                    <li><a href="facilities.html">Our Facilities</a></li>
+                    <li><a href="accomodation.html">Accommodation</a></li>
+                </ul>
+            </li>
+            <li><a href="prices-rules.html">Prices and Rules</a></li>
+            <li><a href="fishrestock.html">Fish Restock</a></li>
+            <li><a href="404.html">Gallery</a></li>
+            <li><a href="404.html">Common Questions</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    
+    <div class="language-selector show">
+        <a href="index.html">    
+            <div class="language-item ">
+                <span class="language-code">DK</span>
+                <img src="images/dk-flag.png" alt="Danish Flag" class="flag">
+            </div>
+        </a>
+        <a href="index-en.html">
+            <div class="language-item">
+                <span class="language-code bold">EN</span>
+                <img src="images/en-flag.png" alt="English Flag" class="flag">
+            </div>
+        </a>
+        <div class="language-item">
+            <span class="language-code">DE</span>
+            <img src="images/ger-flag.png" alt="German Flag" class="flag">
+        </div>
+    </div>
+    <div class="small-logo logo">
+        <img src="images/putandtake-logo-hd.webp" alt="Nørreris Put and Take logo" class="logo-img">
+        <span class="logo-text">Nørreris<br>Put<span class="orange">&</span>Take</span>
+    </div>
+        <!-- blue triangle style at bottom-->
+        <svg class="sidebar-triangle" xmlns="http://www.w3.org/2000/svg" width="283" height="326" viewBox="0 0 283 326" fill="none">
+            <path d="M283 0.319092L-48.9976 326H283V0.319092Z" fill="#D4E6FF"/>
+        </svg>
+    </nav>
+
+<!-----------------------------------------
+    Hero section image carousel
+------------------------------------------->
+    <main>
+        <div class="landing-carousel">
+            <a href="restocking.html" class="fish-announcement-container">
+                <div class="scrolling-announcement-text" aria-hidden="true">
+                    - We put 300 kg fish in 3 days ago! -
+                </div>
+                <div class="scrolling-announcement-text" aria-hidden="true">
+                    - We put 300 kg fish in 3 days ago! -
+                </div>
+                <div class="scrolling-announcement-text" aria-hidden="true">
+                    - We put 300 kg fish in 3 days ago! -
+                </div>
+                <div class="scrolling-announcement-text" aria-hidden="true">
+                    - We put 300 kg fish in 3 days ago! -
+                </div> 
+            </a>
+            <!-- image carousel -->
+            <div class="landing-carousel-content">
+                <!-- first image -->
+                <div class="landing-carousel-item active-img">
+                    <img src="images/hd-lake-drone.webp" alt="Drone billede af Nørreris Put and Take">
+                    <div class="landing-text-container-1">
+                        <h1>
+                            Welcome to <br>
+                            <span class="bold">Nørreris Put<span class="orange">&</span>Take</span>
+                        </h1>
+                        <p>
+                            Nørreris Put&Take is situated in a scenic area in the beautiful Sydhimmerland.
+                        </p>
+                    </div>
+                    <div class="landing-ctas">
+                        <a class="primary-button" href="priser.html">Read more</a>
+                        <a class="secondary-button" href="priser.html">Prices</a>
+                    </div> 
+                </div>
+                <!-- second image -->
+                <div class="landing-carousel-item">
+                    <img src="images/landing-image-2.webp" alt="A man is gently transfering a fish into the Put&Take by net">
+                    <div class="landing-text-container-1">
+                        <h3 class="orange" style="margin-bottom: 0; font-weight: bold;">
+                            With passion for fishing </h3>
+                            <h1 class="bold" style="color: white; margin-top: 0%;">Nørreris Put<span class="orange">&</span>Take</h1>
+                    </div>
+                    <div class="landing-ctas">   
+                        <a class="primary-button" href="fishcarousel.html">See our fish</a>
+                    </div> 
+                </div>
+                <!-- third image -->
+                <div class="landing-carousel-item">
+                    <img src="images/landing-page-3.webp" alt="A man is holding a large-looking brook trout up at the camera">
+                    <div class="landing-text-container-1">
+                        <h1 style="color: white; margin-bottom: 0;">Caught a Big Fish?</h1>
+                            <h3 style="color: #D4E6FF; margin-top: 0%; font-weight: bold;">Earn Your Exclusive Pin Now!
+                        </h3>
+                    </div>
+                    <div class="landing-ctas">   
+                        <a class="primary-button" href="priser.html">Read more</a>
+                    </div> 
+                </div>
+            </div>
+            <div class="landing-carousel-radio-buttons">
+                <input type="radio" name="carousel-radio" id="radio1" checked>
+                <label for="radio1"></label>
+                <input type="radio" name="carousel-radio" id="radio2" >
+                <label for="radio2"></label>
+                <input type="radio" name="carousel-radio" id="radio3" >
+                <label for="radio3"></label>
+            </div>
+        </div>
+    </main>
+
+<!-----------------------------------------
+    About us section
+------------------------------------------->
+    <article class="about-us">
+        <h2>About us</h2>
+        <p>
+            Nørreris Put&Take is located in the picturesque Sydhimmerland, just 600 meters from Hjarbæk Fjord. Our site features three fishing lakes: a large lake with rainbow trout, a children's lake with small trout, and a special lake with large rainbow and golden trout, perfect for fly fishing.
+        </p>
+        <p>
+            We offer a family-friendly environment with picnic tables, shelters, and facilities for grilling. The area is accessible for people with disabilities. We can also host school trips, bachelor parties, family days, and birthdays in our pavilion, which accommodates up to 60 people.
+        </p>
+        <img src="images/about-us-pic.jpg" alt="En far og søn sidder ved sø-bredden og fisker" class="big">
+        <a href="" class="button-orange-outline">See our lakes</a>
+    </article>
+
+<!-----------------------------------------
+    newsletter section
+------------------------------------------->
+    <section class="landing-newsletter">
+        <h3>Subscribe to our newsletter</h3>
+        <p>Get notified every time we restock on new fish.</p>
+        <input type="email" placeholder="Enter your email here" class="email-input">
+        <button class="submit-button">Submit</button>
+    </section>
+
+<!-----------------------------------------
+    Testimonials section
+------------------------------------------->
+    <section class="testimonials-section">
+        <h2>What our guests say</h2>
+        <div class="review-card-container">
+            <div class="review-card"> <!-- this container is just invisible on top of the content. Ignore it, but it's VITAL that it's here -->
+                <div class="review-card-content">
+                    <div class="review-stars">
+                        <img src="images/yellow-star.svg" alt="golden star">
+                        <img src="images/yellow-star.svg" alt="golden star">
+                        <img src="images/yellow-star.svg" alt="golden star">
+                        <img src="images/yellow-star.svg" alt="golden star">
+                        <img src="images/grey-star.svg" alt="grey star">
+                    </div>
+                    <h3>Bjarne Kristensen</h3>
+                    <p>
+                        Lovely peaceful place where it was clean and tidy, and all the necessities you need. There were plenty of fish in the lakes, and I also caught a nice rainbow. It was certainly not our last visit there.
+                    </p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-card-content">
+                    <div class="review-stars">
+                        <img src="images/yellow-star.svg" alt="golden star">
+                        <img src="images/yellow-star.svg" alt="golden star">
+                        <img src="images/yellow-star.svg" alt="golden star">
+                        <img src="images/yellow-star.svg" alt="golden star">
+                        <img src="images/yellow-star.svg" alt="golden star">
+                    </div>
+                    <h3>Maj Osbæck</h3>
+                    <p>
+                        Super cozy, good sheltered spots, sat knitting while the husband fished, a good rainbow trout about two kilograms.
+                    </p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-card-content">
+                    <div class="review-stars">
+                        <img src="images/yellow-star.svg" alt="golden star">
+                        <img src="images/yellow-star.svg" alt="golden star">
+                        <img src="images/yellow-star.svg" alt="golden star">
+                        <img src="images/yellow-star.svg" alt="golden star">
+                        <img src="images/yellow-star.svg" alt="golden star">
+                    </div>
+                    <h3>Michael Forest</h3>
+                    <p>
+                        The little girls love the place, really nice kids' pond with lots of fish. 
+                        A very friendly owner who lets the kids help when stocking the fish. 
+                        The concept of being able to drive around the lakes and park works perfectly 👌
+                    </p>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="review-card-content">
+                    <div class="review-stars">
+                        <img src="images/yellow-star.svg" alt="golden star">
+                        <img src="images/yellow-star.svg" alt="golden star">
+                        <img src="images/yellow-star.svg" alt="golden star">
+                        <img src="images/yellow-star.svg" alt="golden star">
+                        <img src="images/grey-star.svg" alt="grey star">
+                    </div>
+                    <h3>Mikkel Graugaard Antonsen</h3>
+                    <p>
+                        Really cozy put-and-take, 
+                        with benches with and without 
+                        covers around the lake.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="review-arrow-back">
+            <svg xmlns="http://www.w3.org/2000/svg" width="59" height="59" viewBox="0 0 59 59" fill="none">
+                <g filter="url(#filter0_d_626_7877)">
+                  <circle cx="24" cy="24" r="24" transform="matrix(-1 0 0 1 53.25 3.90845)" fill="white"/>
+                </g>
+                <path d="M23.4792 26.9084C24.0315 26.9084 24.4792 27.3562 24.4792 27.9084C24.4792 28.4607 24.0315 28.9084 23.4792 28.9084L23.4792 26.9084ZM22.4193 28.6156C22.0288 28.225 22.0288 27.5919 22.4193 27.2013L28.7832 20.8374C29.1738 20.4469 29.8069 20.4469 30.1974 20.8374C30.588 21.2279 30.588 21.8611 30.1974 22.2516L24.5406 27.9084L30.1975 33.5653C30.588 33.9558 30.588 34.589 30.1975 34.9795C29.8069 35.37 29.1738 35.37 28.7832 34.9795L22.4193 28.6156ZM23.4792 28.9084L23.1264 28.9084L23.1264 26.9084L23.4792 26.9084L23.4792 28.9084Z" fill="#FF6852"/>
+                <defs>
+                  <filter id="filter0_d_626_7877" x="0.25" y="0.908447" width="58" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="2"/>
+                    <feGaussianBlur stdDeviation="2.5"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_626_7877"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_626_7877" result="shape"/>
+                  </filter>
+                </defs>
+              </svg>
+        </div>
+        <div class="review-arrow-forward">
+            <svg xmlns="http://www.w3.org/2000/svg" width="59" height="59" viewBox="0 0 59 59" fill="none">
+                <g filter="url(#filter0_d_626_7874)">
+                  <circle cx="29.25" cy="27.9084" r="24" fill="white"/>
+                </g>
+                <path d="M35.0208 26.9084C34.4685 26.9084 34.0208 27.3562 34.0208 27.9084C34.0208 28.4607 34.4685 28.9084 35.0208 28.9084L35.0208 26.9084ZM36.0807 28.6156C36.4712 28.225 36.4712 27.5919 36.0807 27.2013L29.7168 20.8374C29.3262 20.4469 28.6931 20.4469 28.3026 20.8374C27.912 21.2279 27.912 21.8611 28.3026 22.2516L33.9594 27.9084L28.3025 33.5653C27.912 33.9558 27.912 34.589 28.3025 34.9795C28.6931 35.37 29.3262 35.37 29.7168 34.9795L36.0807 28.6156ZM35.0208 28.9084L35.3736 28.9084L35.3736 26.9084L35.0208 26.9084L35.0208 28.9084Z" fill="#FF6852"/>
+                <defs>
+                  <filter id="filter0_d_626_7874" x="0.25" y="0.908447" width="58" height="58" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="2"/>
+                    <feGaussianBlur stdDeviation="2.5"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_626_7874"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_626_7874" result="shape"/>
+                  </filter>
+                </defs>
+              </svg>
+        </div>
+        <div class="review-radio-buttons">
+            <input type="radio" name="review-radio" id="review-radio1" checked>
+            <label for="review-radio1"></label>
+            <input type="radio" name="review-radio" id="review-radio2" >
+            <label for="review-radio2"></label>
+            <input type="radio" name="review-radio" id="review-radio3" >
+            <label for="review-radio3"></label>
+            <input type="radio" name="review-radio" id="review-radio4" >
+            <label for="review-radio4"></label>
+        </div>
+    </section>
+
+
+
+
+<!----------------------------------------------------
+    footer     english                         
+----------------------------------------------------->
+<footer>
+    <div class="navbar-logo logo">
+        <img src="images/putandtake-logo-hd.webp" alt="Nørreris Put and Take logo" style="width: 20vw;">
+        <span class="logo-text" style="font-size: 49.69px;">Nørreris<br>Put<span class="orange">&</span>Take</span>
+    </div>
+    <div style="display: flex; justify-content: space-between; margin-top: 2vh;">
+    <div><h3>Contact</h3>
+        <div style="display:flex; flex-direction: column; gap: 1vh;">
+                <article style="display: flex; flex-direction: row;"><img src="images/user.webp" alt="user icon from freepic" style="height: 16px; margin-right: 1vw;"><p style="margin-top: 0; margin-bottom: 0%;">Niels Kieldsen</p></article>
+                <article style="display: flex; flex-direction: row;"><img src="images/phone-call.png" alt="phone icon from freepic" style="height: 16px; margin-right: 1vw;"><p style="margin-top: 0; margin-bottom: 0%;">+45 40 40 84 89 </p></article>
+                <article style="display: flex; flex-direction: row;"><img src="images/email.webp" alt="email icon from freepic" style="height: 16px; margin-right: 1vw;"><p style="margin-top: 0; margin-bottom: 0%;">kieldsen@mail.dk</p></article></div></div>
+                <div><h3>Opening Hours</h3>
+    <p style="text-align: right;">Monday - Sunday:<br>
+        05:00 - 22:30</p></div></div>
+        <div style="display: flex; align-items: center; justify-content: space-between; margin: 4vh 0 4vh 0;"><article style="display: flex; flex-direction: row;"><img src="images/maps-and-flags.webp" alt="location icon from freepic" style="height: 16px; margin-right: 1vw;"><p style="margin-top: 0;">Nørrerisvej 9,<br>
+            8832 Skals</p></article>
+            <div style="display: flex;">
+              <a href="index.html">    
+                  <div class="language-item ">
+                      <span class="language-code" style="font-size: 14px">DK</span>
+                      <img src="images/dk-flag.png" alt="Danish Flag" class="flag2">
+                  </div>
+              </a>
+              <a href="index-en.html">
+                  <div class="language-item">
+                      <span class="language-code bold" style="font-size: 14px">EN</span>
+                      <img src="images/en-flag.png" alt="English Flag" class="flag2">
+                  </div>
+              </a>
+              <div class="language-item">
+                  <span class="language-code" style="font-size: 14px">DE</span>
+                  <img src="images/ger-flag.png" alt="German Flag" class="flag2">
+              </div>
+          </div></div>
+        <section class="landing-newsletter2">
+            <h3 style="margin-bottom: 1vh;">Subscribe to our newsletter</h3>
+            <p style="text-align: center; margin-bottom: 2vh;">Get notified every time we restock on new fish.</p>
+            <input type="email" placeholder="Enter your email here" class="email-input">
+            <button class="submit-button2">Submit</button>
+        </section>
+        <p style="text-align: center;">Follow us on <a href="#">Facebook</a></p>
+  </footer>
+<script src="javascript/script.js"></script>
+</body>
+</html>

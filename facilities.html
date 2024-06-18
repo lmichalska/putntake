@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kid's Lake - Fish</title>
+    <link rel="stylesheet" href="styles/css 2nd try.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="navbar">
+      <div class="navbar-logo logo">
+        <img
+          src="images/putandtake-logo-hd.webp"
+          alt="Nørreris Put and Take logo"
+        />
+        <span class="logo-text"
+          >Nørreris<br />Put<span class="orange">&</span>Take</span
+        >
+      </div>
+      <div class="hamburger-menu" id="hamburger-menu">
+        <div class="bar"></div>
+      </div>
+    </nav>
+
+    
+    <div class="banner">
+      <h5><a href="index.html" class="white">Home</a> > <a href="facilities.html" class="white">Facilities</a></h5>
+      <h1>Our Facilities</h1>
+    </div>
+    <main>
+      <div class="desc">
+        <h3>We have a lot more to offer than just lakes! </h3>
+        <p>
+            We offer a family-friendly environment with picnic tables, shelters, and facilities for grilling. The area is accessible for people with disabilities. We can also host school trips, bachelor parties, family days, and birthdays in our pavilion, which accommodates up to 60 people.<br><br>
+You can rent a fishing rod for DKK 50 per day. We also sell powerbait and other fishing equipment.<br>
+To rent/purchase <a href="contact.html" class="orange">call us</a>.
+        </p>
+      </div>
+      <div class="all">
+        <div class="fishbox">
+          <img class="fishimg2" src="images/pavilion.webp" alt="big_pavilion" />
+          <div id="fishtext2">
+            <h3 class="fname">Big Pavilion</h3>
+            <p>In the pavilion there is room for approx. 60 people, so the entire school class with parents and siblings or the entire company's staff association can enter the shelter. It can also be rented for events with dining.</p>
+          </div>
+        </div>
+        <div class="fishbox">
+            <img class="fishimg2" src="images/cabins.webp" alt="dining_cabins" />
+            <div id="fishtext2">
+              <h3 class="fname">Shelter/dining cabins</h3>
+              <p>Several cabins are set up around the lakes. In these you can seek shelter from the wind or eat the food you have brought. From 4 to 10 people can sit in the cabins.</p>
+            </div>
+          </div>
+          <div class="fishbox">
+            <img class="fishimg2" src="images/payment.webp" alt="payment_cabin" />
+            <div id="fishtext2">
+              <h3 class="fname">Payment cabin</h3>
+              <p>This cabin is located right between the parking lot and the lakes. Here you will find information, payment envelopes, fridge/freezer and tables where you can eat in the shade but still see the beautiful surroundings.</p>
+            </div>
+          </div>
+          <div class="fishbox">
+            <img class="fishimg2" src="images/cleaning.webp" alt="cleaning_site" />
+            <div id="fishtext2">
+              <h3 class="fname">Cleaning site</h3>
+              <p>Covered cleaning area where you can clean the fish in running water. Should it have been dark, there is light. You can also weigh and measure the fish here.</p>
+            </div>
+          </div>
+          <div class="fishbox">
+            <img class="fishimg2" src="images/toilet.webp" alt="toilet" />
+            <div id="fishtext2">
+              <h3 class="fname">Toilet</h3>
+              <p>The toilet with heating and a disabled ramp is located together with the other facilities close to the car park.</p>
+            </div>
+          </div>
+          <div class="fishbox">
+            <img class="fishimg2" src="images/shelter.webp" alt="shelter" />
+            <div id="fishtext2">
+              <h3 class="fname">Shelter</h3>
+              <p>Free shelter for you to enjoy and stay overnight! No fishing necessary!</p>
+            </div>
+          </div>
+      </div>
+
+      <!-----------------------------------------
+    Slide-in nav-menu
+------------------------------------------->
+      <div class="overlay" id="overlay"></div>
+      <nav class="mobile-nav" id="mobile-nav">
+        <!-- closing button -->
+        <button id="close-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 32 32"
+            fill="none"
+          >
+            <path
+              d="M31.3742 29.1258C31.6739 29.4231 31.8425 29.8278 31.8425 30.25C31.8425 30.6722 31.6739 31.0769 31.3742 31.3742C31.0769 31.6739 30.6722 31.8425 30.25 31.8425C29.8278 31.8425 29.4231 31.6739 29.1258 31.3742L16 18.2325L2.87415 31.3742C2.57685 31.6739 2.17216 31.8425 1.74998 31.8425C1.32781 31.8425 0.923115 31.6739 0.625818 31.3742C0.326073 31.0769 0.157471 30.6722 0.157471 30.25C0.157471 29.8278 0.326073 29.4231 0.625818 29.1258L13.7675 16L0.625818 2.87417C0.224192 2.47254 0.0673392 1.88716 0.214344 1.33853C0.36135 0.789899 0.78988 0.361369 1.33851 0.214364C1.88714 0.0673586 2.47253 0.224211 2.87415 0.625838L16 13.7675L29.1258 0.625838C29.7467 0.00497741 30.7533 0.00497741 31.3742 0.625838C31.995 1.2467 31.995 2.25331 31.3742 2.87417L18.2325 16L31.3742 29.1258Z"
+              fill="#231F20"
+            />
+          </svg>
+        </button>
+        <!-- nav links -->
+        <ul>
+          <li><li><a href="index-en.html">Home</a></li></li>
+          <!-- the 'discover' dropdown menu -->
+          <li class="menu-dropdown">
+            <a class="bold" href="#" id="dropdown-btn"
+              >Discover <span id="dropdown-arrow">&#9662;</span></a
+            >
+            <ul class="dropdown-content">
+              <li><a href="lakecarousel.html">Our Lakes</a></li>
+              <li><a href="fishlist.html">Our Fish</a></li>
+              <li><a class="bold" href="facilities.html">Our Facilities</a></li>
+              <li><a href="accomodation.html">Accommodation</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Prices and Rules</a></li>
+          <li><a href="fishrestock.html">Fish Restock</a></li>
+          <li><a href="404.html">Gallery</a></li>
+          <li><a href="404.html">Common Questions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div class="language-selector show">
+          <a href="index.html">
+            <div class="language-item">
+              <span class="language-code">DK</span>
+              <img src="images/dk-flag.png" alt="Danish Flag" class="flag" />
+            </div>
+          </a>
+          <a href="index-en.html">
+            <div class="language-item">
+              <span class="language-code bold">EN</span>
+              <img src="images/en-flag.png" alt="English Flag" class="flag" />
+            </div>
+          </a>
+          <div class="language-item">
+            <span class="language-code">DE</span>
+            <img src="images/ger-flag.png" alt="German Flag" class="flag" />
+          </div>
+        </div>
+        <div class="small-logo logo">
+          <img
+            src="images/putandtake-logo-hd.webp"
+            alt="Nørreris Put and Take logo"
+            class="logo-img"
+          />
+          <span class="logo-text"
+            >Nørreris<br />Put<span class="orange">&</span>Take</span
+          >
+        </div>
+        <!-- blue triangle style at bottom-->
+        <svg
+          class="sidebar-triangle"
+          xmlns="http://www.w3.org/2000/svg"
+          width="283"
+          height="326"
+          viewBox="0 0 283 326"
+          fill="none"
+        >
+          <path d="M283 0.319092L-48.9976 326H283V0.319092Z" fill="#D4E6FF" />
+        </svg>
+      </nav>
+    </main>
+    <footer>
+      <div class="navbar-logo logo">
+          <img src="images/putandtake-logo-hd.webp" alt="Nørreris Put and Take logo" style="width: 20vw;">
+          <span class="logo-text" style="font-size: 49.69px;">Nørreris<br>Put<span class="orange">&</span>Take</span>
+      </div>
+      <div style="display: flex; justify-content: space-between; margin-top: 2vh;">
+      <div><h3>Contact</h3>
+          <div style="display:flex; flex-direction: column; gap: 1vh;">
+      <article style="display: flex; flex-direction: row;"><img src="images/user.webp" alt="user icon from freepic" style="height: 16px; margin-right: 1vw;"><p>Niels Kieldsen</p></article>
+      <article style="display: flex; flex-direction: row;"><img src="images/phone-call.png" alt="phone icon from freepic" style="height: 16px; margin-right: 1vw;"><p>+45 40 40 84 89 </p></article>
+      <article style="display: flex; flex-direction: row;"><img src="images/email.webp" alt="email icon from freepic" style="height: 16px; margin-right: 1vw;"><p>kieldsen@mail.dk</p></article></div></div>
+      <div><h3>Opening Hours</h3>
+      <p style="text-align: right;">Monday - Sunday:<br>
+          05:00 - 22:30</p></div></div>
+          <div style="display: flex; align-items: center; justify-content: space-between; margin: 4vh 0 4vh 0;"><article style="display: flex; flex-direction: row;"><img src="images/maps-and-flags.webp" alt="location icon from freepic" style="height: 16px; margin-right: 1vw;"><p>Nørrerisvej 9,<br>
+              8832 Skals</p></article>
+          <div style="display: flex;">
+            <a href="index.html">    
+                <div class="language-item ">
+                    <span class="language-code" style="font-size: 14px">DK</span>
+                    <img src="images/dk-flag.png" alt="Danish Flag" class="flag2">
+                </div>
+            </a>
+            <a href="index-en.html">
+                <div class="language-item">
+                    <span class="language-code bold" style="font-size: 14px">EN</span>
+                    <img src="images/en-flag.png" alt="English Flag" class="flag2">
+                </div>
+            </a>
+            <div class="language-item">
+                <span class="language-code" style="font-size: 14px">DE</span>
+                <img src="images/ger-flag.png" alt="German Flag" class="flag2">
+            </div>
+        </div></div>
+          <section class="landing-newsletter2">
+              <h3 style="margin-bottom: 1vh;">Subscribe to our newsletter</h3>
+              <p style="text-align: center; margin-bottom: 2vh;">Get notified every time we restock on new fish.</p>
+              <input type="email" placeholder="Enter your email here" class="email-input">
+              <button class="submit-button2">Submit</button>
+          </section>
+          <p style="text-align: center;">Follow us on <a href="#">Facebook</a></p>
+  </footer>
+    <script src="javascript/js 2nd try.js"></script>
+    <script src="javascript/script.js"></script>
+  </body>
+</html>

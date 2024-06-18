@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Our Lakes</title>
+    <link rel="stylesheet" href="styles/css 2nd try.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <!-- navigation -->
+    <nav class="navbar">
+      <div class="navbar-logo logo">
+          <img src="images/putandtake-logo-hd.webp" alt="Nørreris Put and Take logo">
+          <span class="logo-text">Nørreris<br>Put<span class="orange">&</span>Take</span>
+      </div>
+      <div class="hamburger-menu" id="hamburger-menu">
+          <div class="bar"></div>
+      </div>
+</nav>
+    
+      <main>
+        <h5><a href="index.html">Home</a> > <a href="lakecarousel.html">Our Lakes</a></h5>
+    <h1>Our Lakes</h1>
+        <div>
+<div class="slideshow-container fade">
+  <div class="Containers">
+    <div class="fish-container">
+      <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+    <img id="fishimg" src="images/big_lake.webp" alt="big_lake">
+    <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+    <div style="text-align:center">
+        <span class="dots" onclick="currentSlide(1)"></span>
+        <span class="dots" onclick="currentSlide(2)"></span>
+        <span class="dots" onclick="currentSlide(3)"></span>
+    </div> 
+    <h1 class="blue" id="italic">The Big Lake</h1>
+    <p>Here, a previously cultivated field was dammed, and the water came... <br><a href="#" class="readmore" id="readmore">READ MORE</a></p>
+    <br><p>Area: 7,500 m2 <br>
+      Water depth: 2,8m to the east and 3,9m to the west</p>
+    <h3>Which fish can you catch in this lake?</h3>
+    <p>- Danish Golden Trout<br>
+      - Rainbow Trout
+    </p>
+    <article id="buttonsgroup">
+    <a href="fish big lake.html"><button class="button">See fish in this lake</button></a>
+    <a href="fishlist.html" style="margin-top: 1.5vh;">See all fish</a>
+  </article>
+  </div>
+  <div class="Containers">
+      <div class="fish-container">
+        <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+        <img id="fishimg" src="images/kids_lake.webp" alt="kids_lake">
+        <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <div style="text-align:center">
+          <span class="dots2" onclick="currentSlide(1)"></span>
+          <span class="dots2" onclick="currentSlide(2)"></span>
+          <span class="dots2" onclick="currentSlide(3)"></span>
+      </div> 
+      <h1 class="blue" id="italic">The Kid's Lake</h1>
+      <p>Everyone can fish in the small lake. Children under 12 who pay a reduced<span id="dotz">...</span><span id="appear"> price may only fish in this lake.
+        There is a catch limit of 2 fish per rod per paid hour in the small lake.<br><br>
+        There is also a rich wildlife in the area, so if not everyone is interested in fishing, you can go exploring in nature and have some good experiences there. The area is approximately 4 ha, of which the lakes cover 1.5 ha, so there is plenty of space for development.</span></p>
+        <button id="read-more">READ MORE</button>
+        <br>
+      <br><p>Area: 2,800 m2 <br>
+        Water depth: approx. 3,25m</p>
+      <h3>Which fish can you catch in this lake?</h3>
+      <p>- Danish Golden Trout<br>
+        - Rainbow Trout
+      </p>
+      <article id="buttonsgroup">
+        <a href="fish kids lake.html"><button class="button">See fish in this lake</button></a>
+        <a href="fishlist.html" style="margin-top: 1.5vh;">See all fish</a>
+    </article>
+  </div>
+  <div class="Containers">
+    <div class="fish-container">
+      <a class="Back" onclick="plusSlides(-1)">&#10094;</a>
+    <img id="fishimg" src="images/special_lake.webp" alt="special_lake">
+    <a class="forward" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+    <div style="text-align:center">
+        <span class="dots3" onclick="currentSlide(1)"></span>
+        <span class="dots3" onclick="currentSlide(2)"></span>
+        <span class="dots3" onclick="currentSlide(3)"></span>
+    </div> 
+    <h1 class="blue" id="italic">The Special Lake</h1>
+    <p>There is also a rich wildlife in the area, so if not everyone is interested in... <br><a href="#" class="readmore" id="readmore">READ MORE</a></p>
+    <br>
+    <p>Area: 4,400 m2<br>
+      Water depth: 4,5m to the north and 3,5m to the south</p>
+    <h3>Which fish can you catch in this lake?</h3>
+    <p>- Danish Golden Trout<br>
+      - Rainbow Trout<br>
+      - Brook Trout<br>
+      - River Trout<br>
+      - Tiger Trout<br>
+      - Arctic Char<br>
+      - Lundby Trout
+    </p>
+    <article id="buttonsgroup">
+    <a href="fishlist.html"><button class="button">See fish in this lake</button></a>
+    <a href="fishlist.html" style="margin-top: 1.5vh;">See all fish</a>
+  </article>
+  </div>
+
+
+<!-----------------------------------------
+ Slide-in nav-menu
+------------------------------------------->
+<div class="overlay" id="overlay"></div>
+<nav class="mobile-nav" id="mobile-nav">
+    <!-- closing button -->
+    <button id="close-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <path d="M31.3742 29.1258C31.6739 29.4231 31.8425 29.8278 31.8425 30.25C31.8425 30.6722 31.6739 31.0769 31.3742 31.3742C31.0769 31.6739 30.6722 31.8425 30.25 31.8425C29.8278 31.8425 29.4231 31.6739 29.1258 31.3742L16 18.2325L2.87415 31.3742C2.57685 31.6739 2.17216 31.8425 1.74998 31.8425C1.32781 31.8425 0.923115 31.6739 0.625818 31.3742C0.326073 31.0769 0.157471 30.6722 0.157471 30.25C0.157471 29.8278 0.326073 29.4231 0.625818 29.1258L13.7675 16L0.625818 2.87417C0.224192 2.47254 0.0673392 1.88716 0.214344 1.33853C0.36135 0.789899 0.78988 0.361369 1.33851 0.214364C1.88714 0.0673586 2.47253 0.224211 2.87415 0.625838L16 13.7675L29.1258 0.625838C29.7467 0.00497741 30.7533 0.00497741 31.3742 0.625838C31.995 1.2467 31.995 2.25331 31.3742 2.87417L18.2325 16L31.3742 29.1258Z" fill="#231F20"/>
+        </svg>
+    </button>
+    <!-- nav links -->
+    <ul>
+        <li><a class="bold" href="index.html">Home</a></li>
+        <!-- the 'discover' dropdown menu -->
+        <li class="menu-dropdown">
+            <a href="#" id="dropdown-btn">Discover <span id="dropdown-arrow">&#9662;</span></a>
+            <ul class="dropdown-content">
+                <li><a href="lakecarousel.html">Our Lakes</a></li>
+                <li><a href="fishlist.html">Our Fish</a></li>
+                <li><a href="facilities.html">Our Facilities</a></li>
+                <li><a href="accomodation.html">Accommodation</a></li>
+            </ul>
+        </li>
+        <li><a href="prices-rules.html">Prices and Rules</a></li>
+        <li><a href="fishrestock.html">Fish Restock</a></li>
+        <li><a href="404.html">Gallery</a></li>
+        <li><a href="404.html">Common Questions</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+<div class="language-selector show">
+    <a href="index.html">    
+        <div class="language-item ">
+            <span class="language-code bold">DK</span>
+            <img src="images/dk-flag.png" alt="Danish Flag" class="flag">
+        </div>
+    </a>
+    <a href="index-en.html">
+        <div class="language-item">
+            <span class="language-code">EN</span>
+            <img src="images/en-flag.png" alt="English Flag" class="flag">
+        </div>
+    </a>
+    <div class="language-item">
+        <span class="language-code">DE</span>
+        <img src="images/ger-flag.png" alt="German Flag" class="flag">
+    </div>
+</div>
+<div class="small-logo logo">
+    <img src="images/putandtake-logo-hd.webp" alt="Nørreris Put and Take logo" class="logo-img">
+    <span class="logo-text">Nørreris<br>Put<span class="orange">&</span>Take</span>
+</div>
+    <!-- blue triangle style at bottom-->
+    <svg class="sidebar-triangle" xmlns="http://www.w3.org/2000/svg" width="283" height="326" viewBox="0 0 283 326" fill="none">
+        <path d="M283 0.319092L-48.9976 326H283V0.319092Z" fill="#D4E6FF"/>
+    </svg>
+</nav>
+</main>
+<footer>
+  <div class="navbar-logo logo">
+      <img src="images/putandtake-logo-hd.webp" alt="Nørreris Put and Take logo" style="width: 20vw;">
+      <span class="logo-text" style="font-size: 49.69px;">Nørreris<br>Put<span class="orange">&</span>Take</span>
+  </div>
+  <div style="display: flex; justify-content: space-between; margin-top: 2vh;">
+  <div><h3>Contact</h3>
+      <div style="display:flex; flex-direction: column; gap: 1vh;">
+  <article style="display: flex; flex-direction: row;"><img src="images/user.webp" alt="user icon from freepic" style="height: 16px; margin-right: 1vw;"><p>Niels Kieldsen</p></article>
+  <article style="display: flex; flex-direction: row;"><img src="images/phone-call.png" alt="phone icon from freepic" style="height: 16px; margin-right: 1vw;"><p>+45 40 40 84 89 </p></article>
+  <article style="display: flex; flex-direction: row;"><img src="images/email.webp" alt="email icon from freepic" style="height: 16px; margin-right: 1vw;"><p>kieldsen@mail.dk</p></article></div></div>
+  <div><h3>Opening Hours</h3>
+  <p style="text-align: right;">Monday - Sunday:<br>
+      05:00 - 22:30</p></div></div>
+      <div style="display: flex; align-items: center; justify-content: space-between; margin: 4vh 0 4vh 0;"><article style="display: flex; flex-direction: row;"><img src="images/maps-and-flags.webp" alt="location icon from freepic" style="height: 16px; margin-right: 1vw;"><p>Nørrerisvej 9,<br>
+          8832 Skals</p></article>
+      <a href="#" id="readmore">DIRECTIONS</a></div>
+      <section class="landing-newsletter2">
+          <h3 style="margin-bottom: 1vh;">Subscribe to our newsletter</h3>
+          <p style="text-align: center; margin-bottom: 2vh;">Get notified every time we restock on new fish.</p>
+          <input type="email" placeholder="Enter your email here" class="email-input">
+          <button class="submit-button2">Submit</button>
+      </section>
+      <p style="text-align: center;">Follow us on <a href="#">Facebook</a></p>
+</footer>
+<script src="javascript/script.js"></script>
+<script src="javascript/js 2nd try.js"></script>
+</body>
+</html>
