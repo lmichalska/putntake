@@ -53,7 +53,7 @@ Slide-in nav-menu
 </ul>
 
 <div class="language-selector show">
-<a href="index.html">    
+<a href="priser-og-regler.html">    
     <div class="language-item ">
         <span class="language-code">DK</span>
         <img src="images/dk-flag.png" alt="Danish Flag" class="flag">
@@ -65,10 +65,12 @@ Slide-in nav-menu
         <img src="images/en-flag.png" alt="English Flag" class="flag">
     </div>
 </a>
-<div class="language-item">
-    <span class="language-code">DE</span>
-    <img src="images/ger-flag.png" alt="German Flag" class="flag">
-</div>
+<a href="404.html">
+    <div class="language-item">
+        <span class="language-code">DE</span>
+        <img src="images/ger-flag.png" alt="German Flag" class="flag">
+    </div>
+</a>
 </div>
 <div class="small-logo logo">
 <img src="images/putandtake-logo-hd.webp" alt="Nørreris Put and Take logo" class="logo-img">
@@ -178,45 +180,33 @@ Slide-in nav-menu
         </div>
         <div class="container">
             <div class="option-group">
-            <label for="rods">Number of Rods</label>
-            <input type="number" id="rods" min="1" value="1">
+              <label for="rods">Number of Rods</label>
+              <input type="number" id="rods" min="1" value="1">
             </div>
-        
+          
             <div class="option-group">
-            <label for="duration">Select Duration</label>
-            <select id="duration">
+              <label for="duration">Select Duration</label>
+              <select id="duration">
                 <option value="2">2 Hours</option>
                 <option value="3">3 Hours</option>
                 <option value="4">4 Hours</option>
                 <option value="5">5 Hours</option>
                 <option value="6">6 Hours</option>
                 <option value="day">Day Ticket</option>
-            </select>
+              </select>
             </div>
-        
+          
             <div class="option-group">
-            <label for="children">Number of Children (under 12)</label>
-            <input type="number" id="children" min="0" value="0">
+              <label for="children">Number of Children (under 12)</label>
+              <input type="number" id="children" min="0" value="0">
             </div>
-        
-            <div class="hide">
-                <div class="option-group">
-                <label for="extra-hour">Extra Hour</label>
-                <input type="checkbox" id="extra-hour">
-                </div>
-            
-                <div class="option-group">
-                <label for="fishing-rod">Fishing Rod Rental</label>
-                <input type="checkbox" id="fishing-rod">
-                </div>
-            </div>
-        
+          
             <div class="summary">
-            <p>Total Price: <span id="total-price">0 DKK</span></p>
+              <p>Total Price: <span id="total-price">0 DKK</span></p>
             </div>
-        
-            <button class="confirm-button">Confirm</button>
-        </div>
+          
+            <button class="confirm-button" id="calculator-confirm">Confirm</button>
+          </div>
     </section>
 
 
